@@ -1,0 +1,47 @@
+body{
+    background: #0B123B;
+}
+
+/*_______________________________*/
+/* Estilo Página cadastroLogin  */
+/*______________________________*/
+
+.cadastro {
+    color: white;
+    float: left;
+    border: 1px solid white;
+    margin-top: 5%;
+    margin-left: 12%;
+    padding: 10%;
+
+}
+
+.login {
+    float: right;
+    border: 1px solid white;
+    color: white;
+    margin-top: 5%;
+    margin-right: 12%;
+    padding: 2%;
+    padding-bottom: 5%;
+
+}
+
+a:link, a:visited {
+    background-color: gray;
+    color: white;
+    padding: 14px 230px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20%;
+
+  }
+  
+  a:hover, a:active {
+    background-color: lightgray;
+  }
+
+/*___________________________________*/
+/* Fim Estilo Página cadastroLogin  */
+/*__________________________________*/

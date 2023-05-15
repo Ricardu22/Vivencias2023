@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos_Grátis</title>
+    <link rel="stylesheet" href="style3.css">
+    
+</head>
+<body>
+    <h3 class="heading">Senhas</h3>
+    <div class="container">
+        <div class="main-video">
+            <div class="video">
+                <video src="videos/curso3/v01.mp4" controls play></video>
+                <h3 class="title">01 - Senha - parte I</h3>
+            </div>
+        </div>
+        
+        <div class="video-list">
+            <div class="vid active">
+                <video src="videos/curso3/v01.mp4"></video>
+                <h3 class="title">01 - Senha - parte I</h3>
+            </div>
+
+            <div class="vid">
+                <video src="videos/curso3/v02.mp4"></video>
+                <h3 class="title">02 - Senha - parte II</h3>
+            </div>
+            
+            <div class="vid">
+                <video src="videos/curso3/v03.mp4"></video>
+                <h3 class="title">03 - Senha - parte III</h3>
+            </div>
+            
+            
+        </div>
+        
+        
+    </div>
+
+<script>
+
+let listVideo = document.querySelectorAll('.video-list .vid');
+let mainVideo = document.querySelector('.main-video video');
+let title = document.querySelector('.main-video .title');
+
+listVideo.forEach(video => {
+    video.onclick = () =>{
+        listVideo.forEach(vid => vid.classList.remove('active'));
+        video.classList.add('active');
+        if(video.classList.contains('active')){
+            let src = video.children[0].getAttribute('src');
+            mainVideo.src = src;
+            let text = video.children[1].innerHTML;
+            title.innerHTML = text;
+        };
+    };
+    
+});
+
+
+</script>
+
+
+
+
+</body>
+
+
+
+
+
+</html>
